@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import NavBar from './Components/NavBar/NavBar';
-import PostList from './Components/PostList/PostList';
+import AddPost from './Components/PostList/PostList';
 
 
 function App(){
@@ -12,21 +12,20 @@ function App(){
 function newPost(post){
   let tempPost = [...posts, post];
   setPosts(tempPost);
+}
 
 
 
   return (
     <div>
-      <header>
         <NavBar />
-      </header>
       <div className='container-fluid'>
         <div className='edge'>
-          <PostList newPost={newPost}/>
+          <AddPost newPost={newPost}/>
         </div>
       </div>
     </div>
   );
-}
+
 }
 export default App;
