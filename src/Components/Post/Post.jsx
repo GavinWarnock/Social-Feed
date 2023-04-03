@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const AddPost = (props) => {
-
+    console.log(props)
     const [userName, setUserName] = useState('');
     const [post, setPost] = useState('');
 
@@ -11,7 +11,7 @@ const AddPost = (props) => {
             userName: userName,
             post: post
         };
-        props.newPost(newPost)
+        // props.newPost(newPost)
     }
 
     return (
