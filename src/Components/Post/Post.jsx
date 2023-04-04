@@ -19,7 +19,7 @@ const AddPost = (props) => {
     }
 
     return (
-        <form onSubmit={handleSubmit} classname='form-grid'>
+        <form onSubmit={handleSubmit} className='form-grid'>
             <div className='input-box' >
                 <label for='username' className='text'>User Name: </label>
                 <input type="text" class='form-control' id='username' placeholder='User Name' value={userName} onChange={(event) => setUserName(event.target.value)} />

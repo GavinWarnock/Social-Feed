@@ -2,10 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid coral;
-    background-color: coral;
+    border: 3px solid teal;
+    background-color: teal;
 }
 
 .text {
-    color: teal;
+    color: coral;
+    font-weight: bold;
 }
