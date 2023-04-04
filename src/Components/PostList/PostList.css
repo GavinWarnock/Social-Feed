@@ -17,3 +17,8 @@
     font-weight: 400;
     color: coral
 }
+
+.inactive{
+    background-color: black;
+    color: teal;
+}
