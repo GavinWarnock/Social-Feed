@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./Post.css"
 
 const AddPost = (props) => {
     console.log(props)
@@ -11,20 +12,23 @@ const AddPost = (props) => {
             userName: userName,
             post: post
         };
-        // props.newPost(newPost)
+        props.newPost(newPost);
+
+        setUserName('');
+        setPost('')
     }
 
     return (
-        <form onSubmit={handleSubmit} classname='form grid'>
-            <div classname='form group' >
-                <label for='username'>User Name: </label>
+        <form onSubmit={handleSubmit} classname='form-grid'>
+            <div className='input-box' >
+                <label for='username' className='text'>User Name: </label>
                 <input type="text" class='form-control' id='username' placeholder='User Name' value={userName} onChange={(event) => setUserName(event.target.value)} />
             </div>
-            <div className='form group'>
-                <label for='post'>Say what you want!</label>
+            <div className='input-box'>
+                <label for='post' className='text'>Say what you want!</label>
                 <textarea class='form-control' id='post' rows='5' value={post} onChange={(event) => setPost(event.target.value)}/>
             </div>
-            <button type='submit' className='btn btn-primary' style={{'margin-top': '1em', 'color': "orange"}}>Submit Post</button>
+            <button type='submit' className='btn btn-primary' style={{'margin-top': '1em', 'color': "teal"}}>Submit Post</button>
         </form>
     )
 }

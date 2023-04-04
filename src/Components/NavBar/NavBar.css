@@ -1,0 +1,15 @@
+.header {
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    padding: 45px;
+    background-color: coral;
+    
+}
+
+.header-text {
+    color: teal;
+    display: inline-block
+
+}

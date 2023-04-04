@@ -1,0 +1,11 @@
+.input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid coral;
+    background-color: coral;
+}
+
+.text {
+    color: teal;
+}
